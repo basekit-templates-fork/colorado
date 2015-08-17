@@ -2,6 +2,19 @@
 <header class="template-header">
 
 	<div class="container">
+
+		{{widget('content', 'headercontent', {
+			'content': '<p>Lorem ipsum dolor sit amet</p>'
+		})|raw}}
+
+		{{widget('profile', 'headerprofile1', {
+			'profileType':'phone',
+			'phone':'profile'
+		})|raw}}
+
+	</div>
+
+	<div class="container">
 		{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
 
 		{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
@@ -18,6 +31,22 @@
 		<div class="template-navigation">
 			{{widget('extendednavigation', 'extendednavigation', {"align":"right"})|raw}}
 		</div>
+	</div>
+
+	<div class="container  container--dark">
+
+		{{widget('profile', 'headerprofile2', {
+			'profileType':'companydescription',
+			'companydescription':'profile'
+		})|raw}}
+
+		{{widget('profile', 'headerprofile3', {
+			'profileType':'socialicons',
+			'socialIconsFacebook':'profile',
+			'socialIconsTwitter':'profile',
+			'socialIconsYoutube':'profile'
+		})|raw}}
+
 	</div>
 
 </header>

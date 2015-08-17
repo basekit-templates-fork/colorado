@@ -1,4 +1,4 @@
-Facet
+Colorado
 =========
 
 BaseKit Template

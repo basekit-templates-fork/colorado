@@ -1,7 +1,7 @@
 {
-    "name":"Facet",
+    "name":"Colorado",
     "widgetVersion": 2,
-    "thumbnail":"facet.png",
+    "thumbnail":"colorado.png",
     "templateType":"standard",
     "pageTypes": ["home"],
     "tags": {

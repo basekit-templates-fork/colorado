@@ -119,10 +119,37 @@
 		-ms-flex-align: center;
 		align-items: center;
 
+		padding: 0 10px;
         @media @bp-global-small {
             display: block;
             text-align: center;
         }
+        &--dark {
+	        background-color: @color-swatch5;
+	        .widget__profile h3 {
+	        	color: @color-swatch1;
+	        }
+        }
+        &--border {
+	        border-bottom: 1px solid darken(@color-swatch7, 10%);
+        }
+	}
+
+	// Header item alignment
+	.widget--template-widget + .widget--template-widget {
+		text-align: right;
+	}
+	.widget__companyname {
+		text-align: left;
+	}
+
+	// Header item padding
+	.widget__content,
+	.widget__profile {
+		padding: 10px;
+		p {
+			padding-bottom: 0;
+		}
 	}
 }
 
@@ -133,7 +160,8 @@
 // ------------------------------
 
 
-.template-navigation {
+.template-navigation,
+.template-header .widget--template-widget + .widget--template-widget {
     @media @bp-global-large {
         // Flexbox child: Stretch template-navigation to fill the available space
         -webkit-flex: 1 1 auto;
@@ -145,7 +173,9 @@
     }
 }
 
-
+.template-navigation {
+	z-index: 1000;
+}
 
 
 // ------------------------------

@@ -1,0 +1,50 @@
+<!-- Header -->
+<header class="template-header">
+
+	<div class="container  container--border">
+
+		{{widget('content', 'headercontent', {
+			'content': '<p>Lorem ipsum dolor sit amet</p>'
+		})|raw}}
+
+		{{widget('profile', 'headerprofile1', {
+			'profileType':'phone',
+			'phone':'profile'
+		})|raw}}
+
+	</div>
+
+	<div class="container">
+		{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+
+		{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+
+		<div class="drop-down-nav">
+<!-- 			<div class="page-title">{{ page.title }}</div> -->
+			<button class="custom-navigation-toggle">
+				<div class='bar one'></div>
+				<div class='bar two'></div>
+				<div class='bar three'></div>
+			</button>
+		</div>
+
+		<div class="template-navigation">
+			{{widget('extendednavigation', 'extendednavigation', {"align":"right"})|raw}}
+		</div>
+	</div>
+
+	<div class="container  container--dark">
+
+		{{widget('pagetitle', 'title', {})|raw}}
+
+		{{widget('profile', 'headerprofile3', {
+			'profileType':'socialicons',
+			'socialIconsFacebook':'profile',
+			'socialIconsTwitter':'profile',
+			'socialIconsYoutube':'profile'
+		})|raw}}
+
+	</div>
+
+</header>
+<!-- End Header -->

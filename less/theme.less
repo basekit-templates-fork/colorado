@@ -126,8 +126,12 @@
         }
         &--dark {
 	        background-color: @color-swatch5;
-	        .widget__profile h3 {
+	        .widget__profile h3,
+	        .widget__pagetitle h1 {
 	        	color: @color-swatch1;
+	        	padding-bottom: 0;
+	        	font-size: @font-swatch4-font-size;
+	        	line-height: @font-swatch4-line-height;
 	        }
         }
         &--border {
@@ -151,7 +155,8 @@
 
 	// Header item padding
 	.widget__content,
-	.widget__profile {
+	.widget__profile,
+	.widget__pagetitle {
 		padding: 10px;
 		p {
 			padding-bottom: 0;

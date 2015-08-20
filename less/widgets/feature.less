@@ -114,7 +114,7 @@
 
 
 .feature__headline {
-    background-color: fadeout(@widget-bg-color, 50%);
+    background-color: fadeout(@widget-bg-color, 30%);
     display: inline-block;
     padding: 0.3em 26px 0.4em;
     margin-bottom: 13px;
@@ -145,7 +145,7 @@
 
 
 .feature__strapline {
-    background-color: fadeout(@widget-bg-color, 50%);
+    background-color: fadeout(@widget-bg-color, 30%);
 	padding: 0.3em 26px 0.4em;
     display: inline-block;
     //float: left;
@@ -176,9 +176,9 @@
     margin-top: 26px;
     padding: 0.6em 4em 0.6em 26px;
     position: relative;
-    background-color: fadeout(@widget-bg-color, 30%);
+    //background-color: fadeout(@widget-bg-color, 30%);
     line-height: 1.3;
-    color: @font-swatch8-color;
+    //color: @font-swatch8-color;
     //float: left;
     clear: both;
 
@@ -196,13 +196,13 @@
     }
 
     &:hover {
-	    background-color: fadeout(@widget-bg-color, 10%);
+	    background-color: @button-hover-color;
     }
 
     // Right Arrow Icon
 
     &:after {
-        color: @font-swatch8-color;
+        color: inherit;
         font-family: 'FontAwesome', sans-serif;
         content: '\f105';
         position: absolute;
@@ -220,7 +220,7 @@
     // Right Arrow Background
 
     &:before {
-    	background-color: fadeout(@widget-bg-color, 10%);
+    	background-color: inherit;
         content: '';
         position: absolute;
         right: 0;

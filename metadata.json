@@ -11,10 +11,7 @@
     },
      "images":[
         "images/feature-bg.jpg",
-        "images/feature-bg2.jpg",
-        "images/feature-bg3.jpg",
-        "images/logo.png",
-        "images/body-bg.jpg"
+        "images/logo.png"
     ],
     "colorSwatches":
     {
@@ -107,7 +104,7 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Oswald\", Arial, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "16px",
             "font-weight": "400",
             "line-height": "20px",

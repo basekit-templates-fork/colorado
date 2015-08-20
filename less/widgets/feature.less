@@ -93,8 +93,18 @@
 
 
 .feature__content-inner-wrap {
-
-}
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }
 
 
 
@@ -104,11 +114,11 @@
 
 
 .feature__headline {
-    background-color: @widget-bg-color;
+    background-color: fadeout(@widget-bg-color, 50%);
     display: inline-block;
     padding: 0.3em 26px 0.4em;
     margin-bottom: 13px;
-    float: left;
+    //float: left;
     clear: both;
 
 
@@ -135,10 +145,10 @@
 
 
 .feature__strapline {
-    background-color: @widget-bg-color;
+    background-color: fadeout(@widget-bg-color, 50%);
 	padding: 0.3em 26px 0.4em;
     display: inline-block;
-    float: left;
+    //float: left;
     clear: both;
 
     @media @feature-large {
@@ -166,10 +176,10 @@
     margin-top: 26px;
     padding: 0.6em 4em 0.6em 26px;
     position: relative;
-    background-color: @widget-bg-color;
+    background-color: fadeout(@widget-bg-color, 30%);
     line-height: 1.3;
     color: @font-swatch8-color;
-    float: left;
+    //float: left;
     clear: both;
 
     @media @feature-large {
@@ -185,10 +195,14 @@
         line-height: bkscale(@font-swatch9-line-height, 0.55);
     }
 
+    &:hover {
+	    background-color: fadeout(@widget-bg-color, 10%);
+    }
+
     // Right Arrow Icon
 
     &:after {
-        color: @color-swatch1;
+        color: @font-swatch8-color;
         font-family: 'FontAwesome', sans-serif;
         content: '\f105';
         position: absolute;
@@ -206,7 +220,7 @@
     // Right Arrow Background
 
     &:before {
-        background-color: @button-color;
+    	background-color: fadeout(@widget-bg-color, 10%);
         content: '';
         position: absolute;
         right: 0;

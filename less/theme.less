@@ -109,9 +109,9 @@
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		-webkit-justify-content: flex-start;
-		-ms-flex-pack: start;
-		justify-content: flex-start;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
 		-webkit-align-content: flex-start;
 		-ms-flex-line-pack: start;
 		align-content: flex-start;
@@ -138,9 +138,15 @@
 	// Header item alignment
 	.widget--template-widget + .widget--template-widget {
 		text-align: right;
+		@media @bp-global-medium {
+			text-align: center;
+		}
 	}
 	.widget__companyname {
 		text-align: left;
+		@media @bp-global-medium {
+			text-align: center;
+		}
 	}
 
 	// Header item padding
@@ -169,7 +175,8 @@
         flex: 1 1 auto;
     }
     @media @bp-global-medium {
-        width: 100%; // Makes template-navigation wrap on separate line
+	    // Makes template-navigation wrap on separate line
+        //width: 100%;
     }
 }
 
@@ -302,10 +309,11 @@ a {
 
 
 .title-bar {
-	background-color: @color-swatch2;
+	//background-color: @color-swatch2;
+	border-bottom: 1px solid darken(@color-swatch7, 10%);
 
 	@media @bp-global-small {
-		border-top: 1px solid contrast(@color-swatch7, rgba(255, 255, 255, 0.10) , rgba(0, 0, 0, 0.10));
+		//border-top: 1px solid contrast(@color-swatch7, rgba(255, 255, 255, 0.10) , rgba(0, 0, 0, 0.10));
 	}
 }
 
@@ -354,7 +362,7 @@ a {
     }
 
     @media @bp-global-medium {
-    	display: block;
+    	//display: block;
     	padding: 8px 13px;
     }
 

@@ -5,9 +5,7 @@
     "templateType":"standard",
     "pageTypes": ["home"],
     "tags": {
-    "en": ["business", "corporate", "company", "corporation", "professional"],
-    "es": ["negocios", "corporativo", "empresa", "corporativo", "profesional"],
-    "br": ["negócio", "corporativo", "companhia", "corporação", "eleição", "profissional"]
+    "en": ["professional", "organised", "luxury", "formal", "business"]
     },
      "images":[
         "images/feature-bg.jpg",

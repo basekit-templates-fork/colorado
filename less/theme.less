@@ -134,11 +134,18 @@
 	        .widget__profile h3,
 	        .widget__profile legend,
 	        .widget__profile .socialicons__social-name,
-	        .emailaddress__email:before {
+	        .emailaddress__email:before,
+	        .widget__profile .phone-number-link:before {
 	        	color: @color-swatch1;
-	        	padding-bottom: 0;
+	        	//padding-bottom: 0;
 	        	font-size: @font-swatch4-font-size;
 	        	line-height: @font-swatch4-line-height;
+	        }
+	        .widget__profile .twitter__timestamp,
+	        .widget__profile .via,
+	        .widget__profile .tweet-metadata a,
+	        .widget__profile .account-name {
+	        	color: darken(@color-swatch1, 5%);
 	        }
 	        .widget__profile input {
 		        background-color: @color-swatch1;
